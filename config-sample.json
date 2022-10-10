@@ -1,0 +1,46 @@
+{
+    "network_id": "2792",
+    "username": "xxx",
+    "password": "xxx",
+    "reports": {
+        "smartadserver_report": {
+            "startDate": "CURRENT_DAY-5",
+            "endDate": "CURRENT_DAY",
+            "advancedfilter": [
+                [
+                    {
+                        "HeaderBiddingTypeName": {
+                            "operator": "eq",
+                            "values": [
+                                "Client Side Header Bidding"
+                            ]
+                        }
+                    }
+                ]
+            ],
+            "Fields": [
+                {
+                    "Day": {
+                        "OutputName": "Date"
+                    }
+                },
+                {
+                    "SiteName": {
+                        "OutputName": "Website"
+                    }
+                },
+                {
+                    "ImpressionsTrueCount": {
+                        "OutputName": "RTB+ Impressions"
+                    }
+                },
+                {
+                    "TotalPaidPriceNetworkCurrencyTrueCount": {
+                        "OutputName": "RTB+ Gross revenue"
+                    }
+                }
+            ]
+
+        }
+    }
+}
